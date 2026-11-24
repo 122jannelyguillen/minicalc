@@ -1,0 +1,4 @@
+minicalc
+minicalc.exe
+*.o
+.vscode/
