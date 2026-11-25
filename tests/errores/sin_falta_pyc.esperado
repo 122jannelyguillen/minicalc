@@ -1,0 +1,15 @@
+=== INICIO DE ANÁLISIS LÉXICO ===
+<ID, "x", 1, 1>
+<OP_ASSIGN, "=", 1, 3>
+<NUM, "10", 1, 5>
+<OP_ADD, "+", 1, 8>
+<NUM, "5", 1, 10>
+<ID, "y", 2, 1>
+<OP_ASSIGN, "=", 2, 3>
+<ID, "x", 2, 5>
+<OP_MUL, "*", 2, 7>
+<NUM, "2", 2, 9>
+<PUNCT_SEMI, ";", 2, 10>
+
+=== INICIO DE ANÁLISIS SINTÁCTICO ===
+Error [Línea 1, Columna 11]: Error sintáctico - falta ';' al final de la sentencia (se encontró 'y')
