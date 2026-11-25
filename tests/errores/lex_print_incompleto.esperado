@@ -1,6 +1,0 @@
-=== INICIO DE ANÁLISIS LÉXICO ===
-<ID, "x", 1, 1>
-<OP_ASSIGN, "=", 1, 3>
-<NUM, "1", 1, 5>
-<PUNCT_SEMI, ";", 1, 6>
-Error [Línea 2, Columna 1]: Error léxico - palabra incompleta 'prin' (¿quiso escribir 'print'?)
