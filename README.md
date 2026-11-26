@@ -16,9 +16,14 @@ minicalc/
 ├── tests/
 │   ├── validos/                Programas correctos (+ salida .esperado)
 │   └── errores/                Errores léxicos (lex_*) y sintácticos (sin_*)
-├── run_tests.sh                Ejecuta todas las pruebas y compara con .esperado
+├── INSTALACION.md              Guía de instalación, ejecución y prueba
+├── run_tests.ps1               Pruebas automáticas (Windows / PowerShell)
+├── run_tests.sh                Pruebas automáticas (Linux, macOS, Git Bash)
+├── demo.ps1                    Demostración guiada paso a paso
 └── Makefile
 ```
+
+> **Guía completa de instalación y prueba:** ver [INSTALACION.md](INSTALACION.md).
 
 ## Compilar
 
@@ -36,12 +41,13 @@ o simplemente `make`.
 ./minicalc tests/validos/ejemplo.calc
 ```
 
-En Windows: `minicalc.exe tests\validos\ejemplo.calc`. Si no se pasa el archivo, el programa lo pide por teclado.
+En Windows (PowerShell): `.\minicalc.exe tests\validos\ejemplo.calc`. Si no se pasa el archivo, el programa lo pide por teclado.
 
 ## Pruebas
 
 ```
-bash run_tests.sh
+powershell -ExecutionPolicy Bypass -File run_tests.ps1     # Windows
+bash run_tests.sh                                          # Linux, macOS, Git Bash
 ```
 
 Corre los 15 casos de `tests/` y compara cada salida con su archivo `.esperado`.
